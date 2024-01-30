@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: aqua;
+}
+.logo{
+    font-size: 3rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sideLogo ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
