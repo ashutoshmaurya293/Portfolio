@@ -6,15 +6,15 @@
 nav {
   background-color: aqua;
 }
-.logo{
-    font-size: 3rem;
+.logo {
+  font-size: 3rem;
 }
 .container {
   display: flex;
   justify-content: space-between;
   height: 70px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 12 00px;
   margin: 0 auto;
 }
 .sideLogo ul {
@@ -22,4 +22,67 @@ nav {
   list-style: none;
   gap: 1rem;
   font-size: 1.5rem;
+}
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 33px;
+  height: 28px;
+  margin-left: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(92, 130, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1 {
+  width: 50%;
+}
+
+#bar2 {
+  width: 75%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.1s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
 }
