@@ -1,16 +1,19 @@
 import React from "react";
 import "./Navbar.css";
+import DarkMode from "../DarkMode/DarkMode";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="container">
+      <div className="Hamburger">
       <input id="checkbox" type="checkbox"/>
-    <label class="toggle" for="checkbox">
-        <div id="bar1" class="bars"></div>
-        <div id="bar2" class="bars"></div>
-        <div id="bar3" class="bars"></div>
+    <label className="toggle" htmlFor="checkbox">
+        <div id="bar1" className="bars"></div>
+        <div id="bar2" className="bars"></div>
+        <div id="bar3" className="bars"></div>
     </label>
+      </div>
         <div className="logo">Logo</div>
         <div className="sideLogo">
           <ul>
@@ -20,6 +23,7 @@ const Navbar = () => {
             <li>something</li>
           </ul>
         </div>
+          <DarkMode/>
       </div>
     </nav>
   );

@@ -15,8 +15,9 @@ nav {
   height: 70px;
   align-items: center;
   max-width: 12 00px;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
+
 .sideLogo ul {
   display: flex;
   list-style: none;
@@ -26,18 +27,19 @@ nav {
 #checkbox {
   display: none;
 }
-
+.Hamburger{
+  display: none;
+}
 .toggle {
   position: relative;
   width: 33px;
   height: 28px;
-  margin-left: 1rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 10px;
+  gap: 6px;
   transition-duration: 0.5s;
 }
 
@@ -85,4 +87,13 @@ nav {
 #checkbox:checked + .toggle {
   transition-duration: 0.5s;
   transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+.Hamburger{
+  display: block;
+}
+.sideLogo{
+  display: none;
+}
 }
