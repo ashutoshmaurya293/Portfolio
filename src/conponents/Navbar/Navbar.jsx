@@ -6,7 +6,8 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container">
-      <div className="Hamburger">
+    <div id="full">
+    <div className="Hamburger">
       <input id="checkbox" type="checkbox"/>
     <label className="toggle" htmlFor="checkbox">
         <div id="bar1" className="bars"></div>
@@ -15,6 +16,7 @@ const Navbar = () => {
     </label>
       </div>
         <div className="logo">Logo</div>
+    </div>
         <div className="sideLogo">
           <ul>
             <li>Projects</li>

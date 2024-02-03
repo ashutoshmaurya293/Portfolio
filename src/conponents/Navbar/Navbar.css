@@ -17,7 +17,11 @@ nav {
   max-width: 12 00px;
   margin: 0 1rem;
 }
-
+.sideLogo{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 .sideLogo ul {
   display: flex;
   list-style: none;
@@ -26,6 +30,11 @@ nav {
 }
 #checkbox {
   display: none;
+}
+#full{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 }
 .Hamburger{
   display: none;
@@ -93,7 +102,7 @@ nav {
 .Hamburger{
   display: block;
 }
-.sideLogo{
+.sideLogo ul{
   display: none;
 }
 }
