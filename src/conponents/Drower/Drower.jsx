@@ -4,13 +4,32 @@ const Drawer = ({ toggle, OnToggle }) => {
   return (
     <>
       {toggle && <Backdrop />}
-      <SDrawer toggle={toggle}></SDrawer>
+      <SDrawer toggle={toggle}>
+       <List>
+       <ul>
+          <li>Projects</li>
+          <li>Contect me</li>
+          <li>About Me</li>
+          <li>Something</li>
+        </ul>
+       </List>
+      </SDrawer>
     </>
   );
 };
 
 export default Drawer;
 
+const List = styled.div`
+  position: absolute;
+  top: 90px;
+  left: 35px;
+  ul>li{
+    list-style: none;
+    padding: 2rem;
+    font-size: 2.2rem;
+  }
+`
 const Backdrop = styled.div`
   height: 100%;
   width: 100%;

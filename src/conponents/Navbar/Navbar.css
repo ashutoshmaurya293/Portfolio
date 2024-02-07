@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 nav {
-  background-color: aqua;
+  background-color: #6f07f6;
+  color: #fff;
 }
 .logo {
   font-size: 3rem;
@@ -14,10 +15,11 @@ nav {
   justify-content: space-between;
   height: 70px;
   align-items: center;
-  max-width: 12 00px;
-  margin: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
-.sideLogo{
+.sideLogo {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -25,18 +27,101 @@ nav {
 .sideLogo ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
-  font-size: 1.5rem;
+  gap: 0.7rem;
+  font-size: 1.8rem;
+}
+.sideLogo ul li {
+  cursor: pointer;
+  height: 35px;
+  padding: 0.5rem 1rem;
+  /* width: 100px; */
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s all ease-in-out;
+  }
+}
+button {
+  font-family: Roboto;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: white;
+    transition: 1.5s ease;
+  }
+  &:active {
+    scale: 0.9;
+  }
+}
+
+button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #0ca9edc0;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+button span:nth-child(6) {
+  position: relative;
+}
+
+button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+button span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.email {
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
 }
 #checkbox {
   display: none;
 }
-#full{
+#full {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
-.Hamburger{
+.Hamburger {
   display: none;
 }
 .toggle {
@@ -100,10 +185,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-.Hamburger{
-  display: block;
-}
-.sideLogo ul{
-  display: none;
-}
+  .Hamburger {
+    display: block;
+  }
+  .sideLogo ul li {
+    display: none;
+  }
 }

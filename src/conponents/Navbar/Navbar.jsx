@@ -30,13 +30,22 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
         </div>
         <div className="sideLogo">
           <ul>
+            <li>Home</li>
             <li>Projects</li>
             <li>Contect me</li>
             <li>About Me</li>
-            <li>something</li>
           </ul>
+        {/* <DarkMode /> */}
+        
+<button>
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Submit</span>
+</button>
         </div>
-        <DarkMode />
       </div>
     </nav>
   );
