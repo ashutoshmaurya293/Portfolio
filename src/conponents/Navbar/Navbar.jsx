@@ -16,7 +16,7 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
               id="checkbox"
               type="checkbox"
               onChange={toggle}
-              value={cheak}
+              checked={cheak}
             />
             <label className="toggle" htmlFor="checkbox">
               <div id="bar1" className="bars"></div>

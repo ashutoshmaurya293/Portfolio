@@ -5,7 +5,7 @@ import "./Header.css"
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const [cheak, setcheak] = useState(true);
+  const [cheak, setcheak] = useState(false);
   const OnToggle = () => {
     setToggle(!toggle);
     setcheak(!cheak);
