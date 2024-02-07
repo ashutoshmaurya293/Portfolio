@@ -20,9 +20,9 @@ const Drawer = ({ toggle, OnToggle }) => {
   return (
     <>
       {toggle && <Backdrop onClick={OnToggle}/>}
-      <SDrawer toggle={toggle}>
+      <SDrawer toggle={toggle} >
         <List>
-          <ul>
+          <ul onClick={OnToggle}>
             <li>
               Home
               {svg}
