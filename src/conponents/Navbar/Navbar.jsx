@@ -35,16 +35,17 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
             <li>Contect me</li>
             <li>About Me</li>
           </ul>
-        {/* <DarkMode /> */}
-        
-<button>
-    <span class="circle1"></span>
-    <span class="circle2"></span>
-    <span class="circle3"></span>
-    <span class="circle4"></span>
-    <span class="circle5"></span>
-    <span class="text">Submit</span>
-</button>
+          {/* <DarkMode /> */}
+          <a href="mailto:ashutoshmaurya079@gmail.com">
+            <button>
+              <span class="circle1"></span>
+              <span class="circle2"></span>
+              <span class="circle3"></span>
+              <span class="circle4"></span>
+              <span class="circle5"></span>
+              <span class="text">Email</span>
+            </button>
+          </a>
         </div>
       </div>
     </nav>

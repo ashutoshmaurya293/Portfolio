@@ -61,7 +61,6 @@ button {
 
   &:hover {
     color: white;
-    transition: 1.5s ease;
   }
   &:active {
     scale: 0.9;
