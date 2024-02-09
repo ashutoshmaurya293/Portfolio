@@ -1,0 +1,46 @@
+.main {
+  height: 450px;
+  width: 650px;
+  background-color: red;
+  /* color: #fff; */
+  margin: 5rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  height: 50%;
+  width: 90%;
+  /* background-color: crimson; */
+}
+.buttom {
+  line-height: 38px;
+  font-size: 32px;
+  margin: 0.2rem;
+}
+.hii {
+  font-size: 28px;
+  margin: 0.2rem;
+}
+.content h2 {
+  line-height: 76px;
+  font-size: 64px;
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+.second {
+  height: 450px;
+  width: 550px;
+  background-color: blue;
+  color: #fff;
+  /* margin: 5rem; */
+}
+.full {
+  /* height: 50vh; */
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

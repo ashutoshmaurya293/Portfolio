@@ -17,14 +17,15 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
               type="checkbox"
               onChange={toggle}
               checked={cheak}
+              onClick={OnToggle}
             />
-            <label className="toggle" htmlFor="checkbox">
+            <label className="toggle" htmlFor="checkbox" >
               <div id="bar1" className="bars"></div>
               <div id="bar2" className="bars"></div>
               <div id="bar3" className="bars"></div>
             </label>
           </div>
-          <div className="logo" onClick={OnToggle}>
+          <div className="logo">
             Logo
           </div>
         </div>
