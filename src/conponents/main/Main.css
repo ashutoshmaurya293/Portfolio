@@ -1,9 +1,7 @@
 .main {
   height: 450px;
-  width: 650px;
-  background-color: red;
-  /* color: #fff; */
-  margin: 5rem;
+  width: 550px;
+  margin: 3rem;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -11,8 +9,7 @@
 }
 .content {
   height: 50%;
-  width: 90%;
-  /* background-color: crimson; */
+  width: 100%;
 }
 .buttom {
   line-height: 38px;
@@ -28,18 +25,21 @@
   font-size: 64px;
   margin: 0.2rem;
   padding: 0.5rem;
+  text-wrap: nowrap;
 }
 .second {
   height: 450px;
-  width: 550px;
-  background-color: blue;
+  width: 700px;
   color: #fff;
-  /* margin: 5rem; */
+}
+.second img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .full {
-  /* height: 50vh; */
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1rem auto;
   display: flex;
   align-items: center;
   justify-content: center;

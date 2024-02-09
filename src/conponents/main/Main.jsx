@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import { motion } from "framer-motion";
+import img1 from "../../Images/19199360.jpg"
 
 const Main = () => {
   return (
@@ -32,7 +33,9 @@ const Main = () => {
           duration: 1,
           ease: "easeInOut",
         }}
-      ></motion.div>
+      >
+        <img src={img1} alt="" />
+      </motion.div>
     </div>
   );
 };
