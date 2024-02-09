@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import { motion } from "framer-motion";
-import img1 from "../../Images/19199360.jpg"
+import img1 from "../../Images/img4.jpg"
 
 const Main = () => {
   return (
