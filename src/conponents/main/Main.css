@@ -46,7 +46,7 @@
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .full{
+  .full {
     flex-direction: column;
   }
   .second {
@@ -55,7 +55,8 @@
   }
   .main {
     height: 230px;
-    width: 100%;
+    width: 89%;
+    margin-left: 2rem;
   }
   .content h2 {
     line-height: 46px;
