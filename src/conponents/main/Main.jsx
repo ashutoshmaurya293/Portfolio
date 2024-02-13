@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import { motion } from "framer-motion";
 import img1 from "../../Images/img4.jpg";
+import HireMe from "../HireMe/HireMe";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
             <p className="hii">Hi, I Am</p>
             <h2>Ashutosh Maurya</h2>
             <p className="buttom">A Front End Developer</p>
+            <HireMe/>
           </div>
         </motion.div>
         <motion.div
@@ -37,7 +39,6 @@ const Main = () => {
           <img src={img1} alt="" />
         </motion.div>
       </div>
-      <div id="second"></div>
     </>
   );
 };
