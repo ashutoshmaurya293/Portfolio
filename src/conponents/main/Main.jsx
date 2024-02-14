@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import { motion } from "framer-motion";
 import img1 from "../../Images/img4.jpg";
+import img2 from "../../Images/develpoer.jpg";
 import HireMe from "../HireMe/HireMe";
 
 const Main = () => {
@@ -18,7 +19,7 @@ const Main = () => {
             <p className="hii">Hi, I Am</p>
             <h2>Ashutosh Maurya</h2>
             <p className="buttom">A Front End Developer</p>
-            <HireMe/>
+            <HireMe />
           </div>
         </motion.div>
         <motion.div
@@ -39,6 +40,19 @@ const Main = () => {
           <img src={img1} alt="" />
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 1000 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 1}} 
+        className="animated-div"
+      >
+        <div className="aboutImg">
+          <img src={img2} alt="" />
+        </div>
+        <div className="aboutContent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam officiis illo incidunt neque necessitatibus sint inventore magnam debitis et aut deleniti eos, sapiente porro reiciendis dolorem nihil dicta quibusdam, aperiam architecto corporis? Ad, nostrum! Molestiae natus in maiores officia.
+        </div>
+      </motion.div>
     </>
   );
 };
