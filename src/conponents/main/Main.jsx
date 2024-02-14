@@ -41,16 +41,22 @@ const Main = () => {
         </motion.div>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: 1000 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 1}} 
+        initial={{ opacity: 0, y: 1000 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
         className="animated-div"
       >
         <div className="aboutImg">
           <img src={img2} alt="" />
         </div>
         <div className="aboutContent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam officiis illo incidunt neque necessitatibus sint inventore magnam debitis et aut deleniti eos, sapiente porro reiciendis dolorem nihil dicta quibusdam, aperiam architecto corporis? Ad, nostrum! Molestiae natus in maiores officia.
+          <p>
+            I'm a front-end developer skilled in HTML, CSS, JavaScript, Git,
+            GitHub, React.js, Redux Toolkit, and Tailwind CSS. I love making
+            websites that work well on all devices. Check out my projects on
+            GitHub to see what I've done. Let's work together to make your
+            website awesome!
+          </p>
         </div>
       </motion.div>
     </>

@@ -47,7 +47,7 @@
 }
 
 .animated-div {
-  background-color: #007bff;
+  background-color: #6f07f6;
   color: #fff;
   height: 280px;
   width: 100%;
@@ -55,23 +55,33 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
-.aboutImg{
+.aboutImg {
   height: 100%;
-  width: 45%;
+  width: 35%;
 }
-.aboutImg img{
+.aboutImg img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
-.aboutContent{
-  height: 80%;
+.aboutContent {
+  height: 70%;
   width: 55%;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  background-color: red;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutContent p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333;
 }
 
 @media (max-width: 768px) {
@@ -79,6 +89,7 @@
     flex-direction: column;
   }
   .second {
+    margin-top: 1.5rem;
     height: 300px;
     width: 100%;
   }
