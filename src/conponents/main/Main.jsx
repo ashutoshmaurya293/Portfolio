@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import img1 from "../../Images/img4.jpg";
 import img2 from "../../Images/develpoer.jpg";
 import HireMe from "../HireMe/HireMe";
+import { FaArrowRight } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -40,6 +41,19 @@ const Main = () => {
           <img src={img1} alt="" />
         </motion.div>
       </div>
+      <motion.div 
+        className="abouth"
+         initial={{
+            x: "-100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 10,
+          }}>
+<h1>About Me</h1>
+<FaArrowRight className="icona"/>
+        </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 1000 }}
         animate={{ opacity: 1, y: 0 }}
