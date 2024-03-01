@@ -4,7 +4,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 
-const ProjectCart = ({ name, github, live, dogs }) => {
+const ProjectCart = ({ name, github, live, dogs,img }) => {
   return (
     <div>
       <div className="card">
@@ -17,7 +17,7 @@ const ProjectCart = ({ name, github, live, dogs }) => {
         </div>
         <div className="card__img">
           <img
-            src="data:image/png;base64,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"
+            src={img}
             alt=""
           />
         </div>

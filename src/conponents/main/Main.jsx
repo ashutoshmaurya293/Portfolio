@@ -10,17 +10,17 @@ import ProjectCart from "../../projectCart/ProjectCart";
 
 const Main = () => {
   // console.log(ProjectObj);
-  ProjectObj.map((e)=>{
-    console.log(e)
-  })
+  ProjectObj.map((e) => {
+    console.log(e);
+  });
   return (
     <>
       <div className="full">
         <motion.div
           className="main"
           initial={{ x: "-100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
+          whileInView={{ x: 0, opacity: 1 }}
         >
           <div className="content">
             <p className="hii">Hi, I Am</p>
@@ -35,7 +35,7 @@ const Main = () => {
             x: "100%",
             opacity: 0,
           }}
-          animate={{
+          whileInView={{
             x: 0,
             opacity: 1,
           }}
@@ -95,11 +95,16 @@ const Main = () => {
         <FaArrowRight className="icona" />
       </motion.div>
       <div className="project">
-        {
-          ProjectObj.map((e)=>(
-            <ProjectCart name={e.name} key={e.name} github = {e.github} live = {e.live} dogs = {e.dogs}/>
-          ))
-        }
+        {ProjectObj.map((e) => (
+          <ProjectCart
+            name={e.name}
+            key={e.name}
+            github={e.github}
+            live={e.live}
+            dogs={e.dogs}
+            img={e.img}
+          />
+        ))}
       </div>
     </>
   );
