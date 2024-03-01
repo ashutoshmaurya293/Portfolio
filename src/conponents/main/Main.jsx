@@ -5,8 +5,14 @@ import img1 from "../../Images/img4.jpg";
 import img2 from "../../Images/develpoer.jpg";
 import HireMe from "../HireMe/HireMe";
 import { FaArrowRight } from "react-icons/fa";
+import ProjectObj from "../halper/ProjectObj";
+import ProjectCart from "../../projectCart/ProjectCart";
 
 const Main = () => {
+  // console.log(ProjectObj);
+  ProjectObj.map((e)=>{
+    console.log(e)
+  })
   return (
     <>
       <div className="full">
@@ -41,19 +47,20 @@ const Main = () => {
           <img src={img1} alt="" />
         </motion.div>
       </div>
-      <motion.div 
+      <motion.div
         className="abouth"
-         initial={{
-            x: "-100%",
-            opacity: 0,
-          }}
-          whileInView={{
-            x: 0,
-            opacity: 10,
-          }}>
-<h1>About Me</h1>
-<FaArrowRight className="icona"/>
-        </motion.div>
+        initial={{
+          x: "-100%",
+          opacity: 0,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 10,
+        }}
+      >
+        <h2>About Me</h2>
+        <FaArrowRight className="icona" />
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 1000 }}
         animate={{ opacity: 1, y: 0 }}
@@ -73,6 +80,23 @@ const Main = () => {
           </p>
         </div>
       </motion.div>
+      <motion.div
+        className="abouth"
+        initial={{
+          x: "-100%",
+          opacity: 0,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 10,
+        }}
+      >
+        <h2>Project</h2>
+        <FaArrowRight className="icona" />
+      </motion.div>
+      <div className="project">
+        <ProjectCart/>
+      </div>
     </>
   );
 };

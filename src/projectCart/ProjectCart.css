@@ -1,0 +1,106 @@
+.card {
+    --font-color: #fff;
+    --bg-color: #e0e0e0;
+    width: 250px;
+    height: 330px;
+    border-radius: 20px;
+    background: #6f07f6;
+    box-shadow: -9px 9px 18px #5a5a5a,
+                9px -9px 18px #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid gray; */
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px #5a5a5a;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+  }
+  
+  .card__descr-wrapper {
+    padding: 15px;
+    display: grid;
+  }
+  
+  .card__title {
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  
+  .card__descr {
+    color: var(--font-color);
+  }
+  
+  .svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(25%);
+    fill: var(--font-color);
+  }
+  
+  .card__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  
+  .card__links .link {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .card__links .link:hover {
+    text-decoration: underline;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px 20px 0 0;
+  }
+  .tec{
+    /* background-color: red; */
+    /* color: #fff; */
+    position: absolute;
+    padding: 1rem;
+    height: 45px;
+    /* background-color: red; */
+    background-color: #6f07f6;
+    /* margin: 5px; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon{
+    color: #fff;
+    background-color: #E44D26;
+    margin: 0.4rem;
+   font-size: 25px;
+
+  }
+  .css{
+    background-color: blue;
+    color: #fff;
+    object-fit: contain;
+    margin: 0.4rem;
+    font-size: 23px;
+
+  }

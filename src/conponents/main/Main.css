@@ -45,14 +45,16 @@
   align-items: center;
   justify-content: center;
 }
-.abouth{
-  height: 80px;
+.abouth {
+  height: 60px;
   width: 100%;
-  background-color:#eee3e3;
+  background-color: #eee3e3a7;
   display: flex;
   align-items: center;
+  margin: 1rem auto;
+  border-radius: 10px;
 }
-.abouth h1{
+.abouth h2 {
   margin: 0 5rem;
 }
 .animated-div {
@@ -65,10 +67,10 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
-.icona{
-font-size: 30px;
+.icona {
+  font-size: 30px;
 }
 .aboutImg {
   height: 100%;
@@ -148,14 +150,15 @@ font-size: 30px;
     width: 90%;
     background-color: #f7f7f7;
   }
-
-  .abouth{
+  .icona {
+    font-size: 20px;
+  }
+  .abouth {
     height: 60px;
   }
-  .abouth h1{
+  .abouth h2 {
     margin: 0 3rem;
   }
-  
 }
 .aboutme {
   height: 400px;

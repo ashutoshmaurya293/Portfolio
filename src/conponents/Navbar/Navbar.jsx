@@ -32,19 +32,19 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
         <div className="sideLogo">
           <ul>
             <li>Home</li>
+            <li>About Me</li>
             <li>Projects</li>
             <li>Contect me</li>
-            <li>About Me</li>
           </ul>
           {/* <DarkMode /> */}
           <a href="mailto:ashutoshmaurya079@gmail.com">
             <button>
-              <span class="circle1"></span>
-              <span class="circle2"></span>
-              <span class="circle3"></span>
-              <span class="circle4"></span>
-              <span class="circle5"></span>
-              <span class="text">Email</span>
+              <span className="circle1"></span>
+              <span className="circle2"></span>
+              <span className="circle3"></span>
+              <span className="circle4"></span>
+              <span className="circle5"></span>
+              <span className="text">Email</span>
             </button>
           </a>
         </div>
