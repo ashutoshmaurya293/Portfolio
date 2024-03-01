@@ -1,25 +1,29 @@
 import React from "react";
 import "./ProjectCart.css";
-import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
+import { IoLogoJavascript } from "react-icons/io5";
 
-const ProjectCart = ({ name, github, live, dogs,img }) => {
+const ProjectCart = ({ name, github, live, dogs, img, tec }) => {
+  const htmlcss = (
+    <span>
+      <TiHtml5 className="icon html" />
+      <FaCss3Alt className="css" />
+    </span>
+  );
+  const js = (
+    <span>
+      <IoLogoJavascript className="icon js"/>
+    </span>
+  );
   return (
     <div>
       <div className="card">
         <div className="tec">
-          {" "}
-          <span>
-            <TiHtml5 className="icon" />
-            <FaCss3Alt className="css" />
-          </span>
+          {tec == "htmlcss" ? htmlcss : tec == "js" ? js : console.log("ASf")}
         </div>
         <div className="card__img">
-          <img
-            src={img}
-            alt=""
-          />
+          <img src={img} alt="" />
         </div>
         <div className="card__descr-wrapper">
           <p className="card__title">{name} Project</p>

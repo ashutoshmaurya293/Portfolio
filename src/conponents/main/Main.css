@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .abouth {
   height: 60px;
@@ -166,9 +167,22 @@
   background-color: red;
 }
 .project{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  margin: 0 auto;
   gap: 2rem;
   margin-top: 2rem;
+}
+@media (max-width: 1400px) {
+  .project {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .project {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

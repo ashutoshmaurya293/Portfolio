@@ -103,6 +103,7 @@ const Main = () => {
             live={e.live}
             dogs={e.dogs}
             img={e.img}
+            tec={e.tec}
           />
         ))}
       </div>

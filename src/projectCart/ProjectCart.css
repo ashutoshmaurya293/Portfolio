@@ -84,10 +84,16 @@ img {
   justify-content: space-between;
 }
 .icon {
-  color: #fff;
-  background-color: #e44d26;
   margin: 0.4rem;
   font-size: 25px;
+}
+.js{
+  color: yellow;
+  background-color: #000;
+}
+.html{
+  color: #fff;
+  background-color: #e44d26;
 }
 .card__descr{
   font-size: 16px;
