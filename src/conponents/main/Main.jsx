@@ -95,7 +95,11 @@ const Main = () => {
         <FaArrowRight className="icona" />
       </motion.div>
       <div className="project">
-        <ProjectCart/>
+        {
+          ProjectObj.map((e)=>(
+            <ProjectCart name={e.name} key={e.name} github = {e.github} live = {e.live} dogs = {e.dogs}/>
+          ))
+        }
       </div>
     </>
   );
