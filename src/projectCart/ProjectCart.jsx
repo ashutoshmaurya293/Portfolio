@@ -3,8 +3,16 @@ import "./ProjectCart.css";
 import { FaCss3Alt } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
 
 const ProjectCart = ({ name, github, live, dogs, img, tec }) => {
+  const react = (
+    <span>
+      <FaReact className="icon react"/>
+      <IoLogoJavascript className="icon js" />
+
+    </span>
+  );
   const htmlcss = (
     <span>
       <TiHtml5 className="icon html" />
@@ -13,14 +21,14 @@ const ProjectCart = ({ name, github, live, dogs, img, tec }) => {
   );
   const js = (
     <span>
-      <IoLogoJavascript className="icon js"/>
+      <IoLogoJavascript className="icon js" />
     </span>
   );
   return (
     <div>
       <div className="card">
         <div className="tec">
-          {tec == "htmlcss" ? htmlcss : tec == "js" ? js : console.log("ASf")}
+          {tec == "htmlcss" ? htmlcss : tec == "js" ? js : react}
         </div>
         <div className="card__img">
           <img src={img} alt="" />

@@ -70,7 +70,8 @@
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  aspect-ratio: 3/2;
+  object-fit: contain;
   border-radius: 20px 20px 0 0;
 }
 .tec {
@@ -91,6 +92,10 @@ img {
   color: yellow;
   background-color: #000;
 }
+.react{
+  color: rgb(0, 128, 255);
+background-color:#fff;
+ }
 .html{
   color: #fff;
   background-color: #e44d26;
