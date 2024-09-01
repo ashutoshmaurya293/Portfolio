@@ -200,3 +200,6 @@ button:hover span:not(:nth-child(6)) {
     cursor: pointer;
   }
 }
+.sideLogo a{
+  all: unset;
+}

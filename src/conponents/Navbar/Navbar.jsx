@@ -20,6 +20,7 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
               onClick={OnToggle}
             />
             <label className="toggle" htmlFor="checkbox" >
+             
               <div id="bar1" className="bars"></div>
               <div id="bar2" className="bars"></div>
               <div id="bar3" className="bars"></div>
@@ -31,10 +32,19 @@ const Navbar = ({ OnToggle, cheak, setcheak }) => {
         </div>
         <div className="sideLogo">
           <ul>
-            <li>Home</li>
+            <a href="#profile">
+
+            <li>Profile</li>
+            </a>
+            <a href="#aboutme">
+              
             <li>About Me</li>
-            <li>Projects</li>
+            </a>
+            
+            <a href="#projects">  <li>Projects</li></a>
+          <a href="https://wa.me/8739003666" target="_blank">
             <li>Contect me</li>
+          </a>
           </ul>
           {/* <DarkMode /> */}
           <a href="mailto:ashutoshmaurya079@gmail.com">

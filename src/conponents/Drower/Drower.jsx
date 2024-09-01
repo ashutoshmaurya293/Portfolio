@@ -1,4 +1,5 @@
 import React from "react";
+import "./Deower.css";
 import styled from "styled-components";
 const Drawer = ({ toggle, OnToggle }) => {
   const svg = (
@@ -19,29 +20,37 @@ const Drawer = ({ toggle, OnToggle }) => {
   );
   return (
     <>
-      {toggle && <Backdrop onClick={OnToggle}/>}
-      <SDrawer toggle={toggle} >
+      {toggle && <Backdrop onClick={OnToggle} />}
+      <SDrawer toggle={toggle}>
         <List>
           <ul onClick={OnToggle}>
-            <li>
-              Home
-              {svg}
-            </li>
+            <a href="#profile">
+              <li>
+                Profile
+                {svg}
+              </li>
+            </a>
             <hr />
-            <li>
-              Projects
-              {svg}
-            </li>
+            <a href="#aboutme">
+              <li>
+                About Me
+                {svg}
+              </li>
+            </a>
             <hr />
-            <li>
-              Contect me
-              {svg}
-            </li>
+            <a href="https://wa.me/8739003666" target="_blank">
+              <li>
+                Contect me
+                {svg}
+              </li>
+            </a>
             <hr />
-            <li>
-              About Me
-              {svg}
-            </li>
+            <a href="#projects">
+              <li>
+                Projects
+                {svg}
+              </li>
+            </a>
             <hr />
           </ul>
         </List>
@@ -61,10 +70,10 @@ const List = styled.div`
     width: 160px;
     /* background-color: red; */
   }
-  li svg {
+  a li svg {
     height: 19px;
   }
-  ul > li {
+  ul > a > li {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +83,8 @@ const List = styled.div`
     width: 100%;
     background-color: #6f07f6;
     color: #fff;
+    text-decoration: none;
+
     &:hover {
       background-color: #00000036;
       color: #fff;

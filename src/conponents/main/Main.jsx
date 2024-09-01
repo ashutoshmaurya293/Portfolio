@@ -15,7 +15,7 @@ const Main = () => {
   });
   return (
     <>
-      <div className="full">
+      <div className="full" id="profile">
         <motion.div
           className="main"
           initial={{ x: "-100%", opacity: 0 }}
@@ -58,7 +58,7 @@ const Main = () => {
           opacity: 10,
         }}
       >
-        <h2>About Me</h2>
+        <h2 id="aboutme">About Me</h2>
         <FaArrowRight className="icona" />
       </motion.div>
       <motion.div
@@ -91,10 +91,10 @@ const Main = () => {
           opacity: 10,
         }}
       >
-        <h2>Project</h2>
+        <h2 id="projects">Project</h2>
         <FaArrowRight className="icona" />
       </motion.div>
-      <div className="project">
+      <div className="project" >
         {ProjectObj.map((e) => (
           <ProjectCart
             name={e.name}
